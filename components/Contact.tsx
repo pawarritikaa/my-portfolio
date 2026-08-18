@@ -10,7 +10,7 @@ export default function Contact() {
         {/* Contact Info */}
         <div className="space-y-2 text-gray-600 mb-8">
           <p>Email: <a href="mailto:ritika.0112cs221107@gmail.com" className="underline">ritika.0112cs221107@gmail.com</a></p>
-          <p>Phone: +91 6264927728</p>
+          
           <p>
             LinkedIn:{" "}
             <a href="https://linkedin.com/in/ritika-pawar-613993294" target="_blank" rel="noopener noreferrer" className="underline">
