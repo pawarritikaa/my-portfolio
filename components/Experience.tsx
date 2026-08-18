@@ -1,35 +1,36 @@
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 px-6 bg-white">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">Industry Experience</h2>
-        <p className="text-center text-gray-600 mb-12">
-          Professional hands-on practice
-        </p>
+    <section id="experience" className="experience">
+      <div className="experience-header">
+        <div className="eyebrow">
+          <div className="w-3 h-3 bg-purple-500 rounded"></div>
+          <span>Industry Experience</span>
+        </div>
+        <h2>Professional hands-on practice</h2>
+      </div>
 
-        {/* Internship Card */}
-        <div className="border rounded-lg shadow-md p-6 bg-gray-50">
-          <h3 className="text-xl font-semibold text-green-600">
-            Full Stack Developer Intern
-          </h3>
-          <p className="text-gray-600">Feb 2026 – Mar 2026</p>
-          <p className="text-gray-600">Conspicuous Solutions, Bhopal, India</p>
+      <div className="timeline">
+        <div className="timeline-item">
+          <div className="timeline-header">
+            <div>
+              <h3>Full Stack Developer Intern</h3>
+              <p className="timeline-company">Conspicuous Solutions</p>
+            </div>
+            <div className="text-right">
+              <span>Feb 2026 – Mar 2026</span>
+              <p className="timeline-location">Bhopal, India</p>
+            </div>
+          </div>
 
-          <p className="mt-4 text-gray-700">
-            Successfully completed an intensive internship designing and deploying full-stack digital solutions. Contributed directly to multiple projects including:
+          <p className="timeline-desc">
+            Successfully completed an intensive internship designing and deploying full-stack digital solutions. Contributed directly to multiple projects including a Lost & Found mobile app, a Task Tracker web service, and a Resume Builder with ATS integration.
           </p>
-          <ul className="list-disc list-inside mt-2 text-gray-700 space-y-1">
-            <li>Lost & Found mobile application</li>
-            <li>Dynamic Task Tracker web service</li>
-            <li>Resume Builder with ATS integration</li>
-          </ul>
 
-          <p className="mt-4 text-gray-700">Key Contributions:</p>
-          <ul className="list-disc list-inside mt-2 text-gray-700 space-y-1">
-            <li>Implemented secure Firebase & Google Authentication systems</li>
-            <li>Built structured REST APIs integrating MongoDB & Express</li>
-            <li>Developed cross-platform mobile views using React Native & TypeScript</li>
-          </ul>
+          <div className="deliverables">
+            <span className="deliverable">Implemented secure Firebase & Google Authentication systems</span>
+            <span className="deliverable">Built structured REST APIs integrating MongoDB & Express</span>
+            <span className="deliverable">Developed cross-platform mobile views using React Native & TypeScript</span>
+          </div>
         </div>
       </div>
     </section>

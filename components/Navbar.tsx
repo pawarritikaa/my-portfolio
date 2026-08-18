@@ -1,27 +1,23 @@
 export default function Navbar() {
-    return (
-        <nav className="w-full pt-20 px-20 flex justify-between items-center">
-            <div className="flex items-center space-x-2">
-                <h1 className="logo">ritika pawar</h1>
-                <span className="status-badge"></span>
+  return (
+    <nav className="navbar">
+      {/* Left side: logo + badge */}
+      <div className="flex items-center space-x-4">
+        <h1 className="logo">ritika.pawar</h1>
+        <div className="status-badge">
+          <span className="status-dot"></span>
+          <span>OPEN TO ROLES</span>
+        </div>
+      </div>
 
-                <span className="dot">Open to Roles</span>
-            </div>
-        
-        <div className="flex items-center space-x-6">
-        <a href="#about" className="text-gray-600 hover:text-black">About</a>
-        <a href="#skills" className="text-gray-600 hover:text-black">Skills</a>
-        <a href="#experience" className="text-gray-600 hover:text-black">Experience</a>
-        <a href="#projects" className="text-gray-600 hover:text-black">Projects</a>
-
-        {/* Contact Button */}
-        <a
-          href="#contact"
-          className="contact-btn"
-        >
-          Contact
-        </a>
+      {/* Right side: nav links + contact */}
+      <div className="nav-links items-center">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" className="contact-btn">Contact</a>
       </div>
     </nav>
-    );
+  );
 }
